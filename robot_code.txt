@@ -1,0 +1,4 @@
+robot extract --method BOT --input hp.owl --term-file HPO_pertinent_IRI_IDs_only.csv --output hpo_robot_output.owl
+robot extract -vvv --method BOT --input Thesaurus.owl --term-file NCIT_IRI_ID.csv --output ncit_robot_test1_output.owl
+robot extract -vvv --method BOT --input ontology-2024-10-03_07-32-04.owl --term-file SNOMED_IRI_ID.csv --output snomed_robot_test1_output.owl
+robot merge --input hpo_robot_test1_output.owl --input ncit_robot_test1_output.owl --input snomed_robot_test1_output.owl --output ontology_merge_test1.owl
